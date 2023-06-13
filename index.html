@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLASS PROJECT</title>
+    <style>
+      nav {
+        padding: 15px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(224, 248, 208);
+        display: flex;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+      }
+      li {
+        padding: 0 5rem;
+      }
+      .content {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .img1 {
+        width: 10%;
+      }
+      .img2 {
+        width: 30%;
+      }
+      section {
+        display: flex;
+        justify-content: space-around;
+      }
+      @media screen and (max-width: 480px) {
+        nav {
+          display: block;
+           
+        } 
+        ul {
+          display: block;
+        } 
+        .content3 {
+        position: relative;
+        display: block;
+        top: 5rem;
+        }
+        .content4 {
+          display: block;
+          top: 30rem;
+          justify-content: left;
+        
+      }
+      .img5 {
+        margin-left: 5rem;
+      }
+      .img6 {
+        margin-left: 5rem;
+      }
+      .img7 {
+        margin-left: 5rem;
+      }
+      .img8 {
+        margin-left: 6rem;
+      }
+      }
+      @media screen and (max-width: 900px){
+        nav {
+          display: block;
+          background: rgb(247, 209, 247); 
+          color: green;
+        }  
+        ul {
+          display: block;
+          font-size: large;
+          justify-content: space-around;
+        }
+      
+      }
+
+      .content1 {
+        position: relative;
+        top: 6rem;
+        right: 5rem;
+        font-size: xx-large;
+        line-height: 1;
+      }
+      span {
+        color: aquamarine;
+      }
+      a,
+      button {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+      }
+      button {
+        background-color: black;
+        padding: 9px 25px;
+        border: none;
+        border-radius: 25px;
+        margin-left: 8rem;
+        background-image: url("shopping\ bag\ \(2\).png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 20px;
+      }
+      .content2 {
+        position: relative;
+        top: 22rem;
+        right: 0rem;
+        border: none;
+        border-radius: 50%;
+        width: 420px;
+        height: 420px;
+        background-color: rgb(159, 156, 156);
+        transform: translate(-20%, -50%);
+        margin-left: 5rem;
+      }
+      .mainimg {
+        width: 470px;
+        height: 470px;
+        margin-top: 1rem;
+        height: fit-content;
+      }
+      .content3 {
+        position: relative;
+        top: 6rem;
+        margin-right: 1rem;
+        display: grid;
+      }
+
+      .content4 {
+        display: grid;
+      }
+      h1 {
+        white-space: pre;
+        line-height: 1;
+        top: 20rem;
+        right: 10rem;
+        border-top-right-radius: 50%;
+        margin-left: 8rem;
+      }
+      h2,
+      h3,
+      h4,
+      p {
+        line-height: 0.3;
+        margin-left: 8rem;
+      }
+      .action {
+        margin-left: 8rem;
+        display: flex;
+      }
+      .img3 {
+        margin-left: 1rem;
+        white-space: pre;
+        width: 10%;
+        line-height: 0.3;
+        width: 25px;
+        height: 25px;
+      }
+      .img4 {
+        margin-left: 1rem;
+        white-space: pre;
+        width: 10%;
+        line-height: 0.3;
+        width: 25px;
+        height: 25px;
+      }
+      .img5 {
+        margin-left: 20rem;
+      }
+      .img6 {
+        margin-left: 20rem;
+      }
+      .img7 {
+        margin-left: 20rem;
+      }
+      .img8 {
+        margin-left: 21rem;
+      }
+
+      p {
+        white-space: pre;
+        direction: ltr;
+        width: 10%;
+        line-height: 0.3;
+        margin-left: 22rem;
+      }
+      h5 {
+        width: 20px;
+        height: 20px;
+        direction: rtl;
+        margin-top: 5px;
+        line-height: 0.3;
+        white-space: pre;
+      }
+      .action2 {
+        color: rgb(249, 249, 242);
+        position: absolute;
+        justify-content: space-between;
+        top: 6rem;
+        margin-left: 3rem;
+        display: grid;
+        margin-top: 20rem;
+      }
+      .btn1 {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 300;
+        background-color: white;
+        color: black;
+        height: 70px;
+        border-radius: 40%;
+        position: relative;
+        margin-left: 15rem;
+        margin-top: 0.3rem;
+        padding: 9px 25px;
+        border: none;
+        background-image: url("blue\ icon\ resized.png");
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+      .btn2 {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 300;
+        color: black;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        margin-left: 10rem;
+        margin-top: 0.3rem;
+        background-color: white;
+        padding: 9px 25px;
+        border: none;
+      }
+      .btn2 span {
+        font-size: medium;
+        color: orange;
+        font-size: 16px;
+        font-weight: 800px;
+        font-style: normal;
+        padding: 9px 25px;
+        border: none;
+      }
+      .btn3 {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 300;
+        background-color: white;
+        color: black;
+        height: 80px;
+        width: fit-content;
+        margin-top: 0.1rem;
+        border-radius: 40%;
+        position: relative;
+        margin-left: 5rem;
+        background-image: url("orange24.png");
+        background-repeat: no-repeat;
+      }
+      .p {
+        top: 6rem;
+      }
+      .text h4 {
+        color: rgb(6, 7, 6);
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 3rem;
+        margin-left: 10rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Product</li>
+        <li>About</li>
+        <li>Support</li>
+      </ul>
+      <div class="content">
+        <img class="img1" src="search_icon-removebg-preview (1).png" alt="" />
+        <img class="img2" src="cart-removebg01.png" alt="" />
+      </div>
+    </nav>
+    <section>
+      <div class="content1">
+        <h1>Always Be Your Self</h1>
+        <h2>Energy <span>Drink</span></h2>
+        <h3>Total Order: $12.00</h3>
+        <h4>choose your</h4>
+        <div class="action">
+          <img class="img3" src="up arrow2.png" />
+          <h5>0</h5>
+          <img class="img4" src="down arrow2.png" />
+        </div>
+        <button>Buy Now</button>
+      </div>
+      <div class="content2">
+        <img class="mainimg" src="can_drinks02-removebg-preview.png" />
+      </div>
+      <div class="action2">
+        <button class="btn1">
+          Best Drinks <br />The things you can consider
+        </button>
+        <button class="btn2"><span>100%</span> <br />Original Product</button>
+        <button class="btn3">Classic Drinks <br />For Everyone</button>
+      </div>
+
+      <div class="content3">
+        <div class="content4">
+          <img class="img5" src="can_drinks02-removeresized.png" />
+          <p>Ice Tea</p>
+        </div>
+        <div class="content5">
+          <img class="img6" src="image6-removebg-resized.png" />
+          <p>Maltex</p>
+        </div>
+        <div class="content6">
+          <img class="img7" src="drink5-resized.png" />
+          <p>Goldberg</p>
+        </div>
+        <div class="content7">
+          <img class="img8" src="image7-removebg-resized.png" />
+          <p>Spiritz</p>
+        </div>
+        <div class="text">
+          <h4>Giveaway Free Samples &gt;&gtdot;&Gt;</h4>
+        </div>
+      </div>
+
+      <script>
+        let randomDrinks = Math.random();
+        console.log(randomDrinks);
+
+        let randomNumber1 = Math.floor(Math.random() * 4);
+        let randomNumber2 = Math.ceil(Math.random() * 4);
+        let randomNumber3 = Math.floor(Math.random() * 4);
+        let randomNumber4 = Math.ceil(Math.random() * 4);
+
+        console.log(randomNumber1);
+        console.log(randomNumber2);
+        console.log(randomNumber3);
+        console.log(randomNumber4);
+
+        let i = 0;
+        let box = document.querySelector("div");
+        let mainimg = document.querySelector(".mainimg");
+        let img5 = document.querySelector(".img5");
+        let img6 = document.querySelector(".img6");
+        let img7 = document.querySelector(".img7");
+        let img8 = document.querySelector(".img8");
+        let Drinks = ["", "img6", "img7", "img8"];
+
+        img5.addEventListener("click", function () {
+          mainimg.src = "can_drinks02-removeresized.png";
+        });
+        img6.addEventListener("click", function () {
+          mainimg.src = "image6-removebg-resized.png";
+        });
+        img7.addEventListener("click", function () {
+          mainimg.src = "drink5-resized.png";
+        });
+        img8.addEventListener("click", function () {
+          mainimg.src = "image7-removebg-resized.png"
+        });
+        
+      </script>
+    </section>
+  </body>
+</html>
